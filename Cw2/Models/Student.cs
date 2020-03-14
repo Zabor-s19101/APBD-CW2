@@ -5,13 +5,20 @@ namespace Cw2.Models {
     [XmlRoot("student")]
     public class Student {
         [XmlAttribute("indexNumber")]
-        public string IndexNumber { get; set; }
+        public string IndexNumber { set; get; }
         [XmlElement("fname")]
-        public string FName { get; set; }
+        public string FName { set; get; }
         [XmlElement("lname")]
-        public string LName { get; set; }
-        public string Birthdate { get; set; }
+        public string LName { set; get; }
+        [XmlElement("birthdate")]
+        public string Birthdate { set; get; }
+        [XmlElement("email")]
+        public string Email { set; get; }
+        [XmlElement("mothersName")]
+        public string MothersName { set; get; }
+        [XmlElement("fathersName")]
+        public string FathersName { set; get; }
         [XmlElement("studies")]
-        public Studies StudiesNameAndMode { get; set; }
+        public Studies StudiesNameAndMode { set; get; }
     }
 }

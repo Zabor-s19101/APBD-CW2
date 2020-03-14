@@ -10,5 +10,7 @@ namespace Cw2.Models {
         public string Author { set; get; }
         [XmlArray("studenci"), XmlArrayItem("student")]
         public Student[] Studenci { set; get; }
+        [XmlArray("activeStudies"), XmlArrayItem("studies")]
+        public ActiveStudy[] ActiveStudies { set; get; }
     }
 }
